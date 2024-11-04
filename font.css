@@ -1,0 +1,8 @@
+/* font */
+@charset "utf-8";
+
+@font-face {
+   font-family: 'establish';
+   src: url(./fonts/establish\ Retrosans\ OTF.otf);
+   font-weight: 700;
+}
