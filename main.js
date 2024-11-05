@@ -18,6 +18,7 @@ function scrollEvent(event){
 const gnbOpenBtn = document.querySelector('.gnb_btn');
 const gnbBtnIcon = document.querySelector('.gnb_btn i');
 const gnb = document.querySelector('.gnb');
+const logo = document.querySelector('.logo_wrap a')
 
 let isOpen = false;
 
@@ -25,9 +26,15 @@ gnbOpenBtn.addEventListener('click', function() {
    if (isOpen) {
       gnbBtnIcon.className = 'ri-menu-line';
       gnb.style.display = 'none';
+      gnbOpenBtn.style.color = '#000'
+      logo.style.backgroundImage = 'url(images/ob_logo_balck.png)'
+      document.querySelector('html').style.overflow = 'visible'
    } else {
       gnbBtnIcon.className = 'ri-close-line';
       gnb.style.display = 'flex';
+      gnbOpenBtn.style.color = '#fff'
+      logo.style.backgroundImage = 'url(images/ob_logo_white.png)'
+      document.querySelector('html').style.overflow = 'hidden'
    }
    isOpen = !isOpen;
 });
@@ -80,6 +87,7 @@ newsBoxes.forEach(box => {
 
       const newsText = box.closest('.news_contents').querySelector('strong');
       newsText.style.textDecoration = 'underline';
+      newsText.style.textUnderlineOffset = '5px'
    });
 
    box.addEventListener('mouseout', () => {
