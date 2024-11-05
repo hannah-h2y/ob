@@ -153,6 +153,9 @@ aboutOne.to('.about_1', {
 aboutOne.to('.about_text_1', {
    opacity: 1,
 })
+aboutOne.to('.underline_1', {
+   width: '100%'
+})
 ScrollTrigger.create({
    animation: aboutOne,
    trigger: ".about_1",
@@ -171,6 +174,9 @@ aboutTwo.to('.about_2', {
 aboutTwo.to('.about_text_2', {
    opacity: 1,
 })
+aboutTwo.to('.underline_2', {
+   width: '100%'
+})
 ScrollTrigger.create({
    animation: aboutTwo,
    trigger: ".about_2",
@@ -188,6 +194,9 @@ aboutThree.to('.about_3', {
 aboutThree.to('.about_text_3', {
    opacity: 1,
 })
+aboutThree.to('.underline_3', {
+   width: '100%'
+})
 ScrollTrigger.create({
    animation: aboutThree,
    trigger: ".about_3",
@@ -195,6 +204,15 @@ ScrollTrigger.create({
    end: "+=50%",
    scrub: true,
    pin: '.about_ob',
+})
+
+gsap.to('.news', {
+   scrollTrigger: {
+      trigger: '.news',
+      start: 'top top',
+      pin: true,
+      pinSpacing: false,
+   }
 })
 
 
