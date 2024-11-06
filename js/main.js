@@ -20,6 +20,7 @@ const gnbBtnIcon = document.querySelector('.gnb_btn i');
 const gnb = document.querySelector('.gnb');
 const logo = document.querySelector('.logo_wrap a')
 
+
 let isOpen = false;
 
 gnbOpenBtn.addEventListener('click', function() {
@@ -27,13 +28,13 @@ gnbOpenBtn.addEventListener('click', function() {
       gnbBtnIcon.className = 'ri-menu-line';
       gnb.style.display = 'none';
       gnbOpenBtn.style.color = '#000'
-      logo.style.backgroundImage = 'url(images/ob_logo_balck.png)'
+      logo.style.backgroundImage = 'url(./images/ob_logo_black.png)'
       document.querySelector('html').style.overflow = 'visible'
    } else {
       gnbBtnIcon.className = 'ri-close-line';
       gnb.style.display = 'flex';
       gnbOpenBtn.style.color = '#fff'
-      logo.style.backgroundImage = 'url(images/ob_logo_white.png)'
+      logo.style.backgroundImage = 'url(./images/ob_logo_white.png)'
       document.querySelector('html').style.overflow = 'hidden'
    }
    isOpen = !isOpen;

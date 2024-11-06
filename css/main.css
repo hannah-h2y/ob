@@ -21,7 +21,6 @@ button {
    cursor: pointer;
    background: none;
    border: none;
-   background: none;
 }
 a {
    text-decoration: none;
@@ -81,7 +80,7 @@ header .logo_wrap {
 header .logo_wrap a {
    display: block;
    width: 200px;height: 50px;
-   background-image: url(images/ob_logo_balck.png);
+   background-image: url(../images/ob_logo_black.png);
    background-repeat: no-repeat;
    background-size: contain;
 }
@@ -110,7 +109,7 @@ header .gnb li {
    font-weight: 500;
    padding: 0 30px;
 }
-header .gnb li> a:hover {
+header .gnb li>a:hover {
    color: var(--point-color);
    font-weight: bold;
 }
