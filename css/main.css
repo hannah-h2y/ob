@@ -75,7 +75,7 @@ header.hide {
    top: -90px;
 }
 header .logo_wrap {
-   position: relative;z-index: 99;
+   position: relative;z-index: 999;
 }
 header .logo_wrap a {
    display: block;
@@ -85,7 +85,7 @@ header .logo_wrap a {
    background-size: contain;
 }
 header .gnb_wrap {
-   position: relative;z-index: 2;
+   position: relative;z-index: 99;
 }
 header .gnb_wrap .gnb_btn {
    position: relative;
@@ -94,7 +94,7 @@ header .gnb_wrap .gnb_btn {
    padding: 0 5px;
    color: #000;
    font-weight: bold;
-   z-index: 99;
+   z-index: 999;
 }
 header .gnb {
    display: none;
@@ -103,10 +103,8 @@ header .gnb {
    position: fixed;
    top: 0;bottom: 0;left: 0;right: 0;
    width: 100vw;height: 100vh;
-   z-index: 9;
+   z-index: 99;
    background: var(--main-color);
-   border:
-   solid #000;
 }
 header .gnb li {
    font-size: 30px;
@@ -774,7 +772,7 @@ footer .footer_bottom .family_wrap button {
    bottom: 100%;
    left: 0;
    right: 0;
-   z-index: 9999;
+   z-index: 3;
    background-color: #fff;
    padding: 10px 0;
    border-radius: 10px 10px 0 0;
