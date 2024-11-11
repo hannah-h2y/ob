@@ -87,7 +87,6 @@ header .logo_wrap a {
 }
 header .gnb_wrap {
    position: relative;z-index: 5;
-   height: 100vh;
 }
 header .gnb_wrap .gnb_btn {
    position: relative;

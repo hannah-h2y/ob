@@ -29,12 +29,14 @@ gnbOpenBtn.addEventListener('click', function() {
       gnb.style.display = 'none';
       gnbOpenBtn.style.color = '#000'
       logo.style.backgroundImage = 'url(./images/ob_logo_black.png)'
+      document.querySelector('.gnb_wrap').style.height = "auto"
       document.querySelector('html').style.overflow = 'visible'
    } else {
       gnbBtnIcon.className = 'ri-close-line';
       gnb.style.display = 'flex';
       gnbOpenBtn.style.color = '#fff'
       logo.style.backgroundImage = 'url(./images/ob_logo_white.png)'
+      document.querySelector('.gnb_wrap').style.height = "100vh"
       document.querySelector('html').style.overflow = 'hidden'
    }
    isOpen = !isOpen;
