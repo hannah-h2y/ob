@@ -64,12 +64,13 @@ h2>a>i {
 header {
    display: flex;
    justify-content: space-between;
-   align-items: center;
+   align-items: flex-start;
    position: fixed;top: 0;left: 0;right: 0;
    padding: 20px 2%;
    width: 100vw;
    overflow: hidden;
    z-index: 9;
+
 }
 header.hide {
    top: -90px;
@@ -86,7 +87,7 @@ header .logo_wrap a {
 }
 header .gnb_wrap {
    position: relative;z-index: 5;
-   height: auto;
+   height: 100vh;
 }
 header .gnb_wrap .gnb_btn {
    position: relative;
